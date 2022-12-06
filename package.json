@@ -1,7 +1,10 @@
 {
-  "name": "wsbl",
+  "name": "pbe",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
