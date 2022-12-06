@@ -165,7 +165,7 @@ class App extends React.Component {
                 <Navbar/>
                 <center>
                     <MaterialTable
-                        style={{ maxWidth: '80%', marginTop: '20px' }}
+                        style={{ maxWidth: '90%', marginTop: '20px' }}
                         options={{
                             filtering: true,
                             exportButton: true,
