@@ -177,6 +177,8 @@ class App extends React.Component {
                         columns={[
                             { title: 'Username', field: 'forum_name' },
                             { title: 'Name', field: 'player_name' },
+                            { title: 'TPE Total', field: 'tpe', type: "numeric", defaultSort: "desc"},
+                            { title: 'TPE Banked', field: 'tpe_banked', type: "numeric"},
                             { title: 'Season', field: 'season', lookup: this.state.seasons, type: "numeric" },
                             { title: 'Team', field: 'team', lookup: this.state.teams },
                             { title: 'Position', field: 'position', lookup: this.state.positions},
@@ -184,8 +186,6 @@ class App extends React.Component {
                             { title: 'League', field: 'league', lookup: this.state.leagues },
                             { title: 'Conference', field: 'conference', lookup: this.state.conferences },
                             { title: 'Division', field: 'division', lookup: this.state.divisions },
-                            { title: 'TPE Banked', field: 'tpe_banked', type: "numeric"},
-                            { title: 'TPE Total', field: 'tpe', type: "numeric", defaultSort: "desc"},
                             { title: 'Last Updated', field: 'last_updated', type: "date" },
                             { title: 'Player Page', field: 'player_forum_code', hidden: true}
                         ]}

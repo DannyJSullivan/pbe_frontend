@@ -151,12 +151,12 @@ class App extends React.Component {
                         icons={tableIcons}
                         columns={[
                             { title: 'Team', field: 'name', lookup: this.state.team_names },
+                            { title: 'Total TPE', field: 'tpe', type: "numeric", defaultSort: "desc" },
+                            { title: 'Avg TPE / Player', field: 'average_tpe', type: "numeric"},
                             { title: 'League', field: 'league', lookup: this.state.leagues },
                             { title: 'Conference', field: 'conference', lookup: this.state.conferences},
                             { title: 'Division', field: 'division', lookup: this.state.divisions},
-                            { title: 'Players', field: 'player_count', type: "numeric"},
-                            { title: 'Total TPE', field: 'tpe', type: "numeric", defaultSort: "desc" },
-                            { title: 'Avg TPE / Player', field: 'average_tpe', type: "numeric"}
+                            { title: 'Players', field: 'player_count', type: "numeric"}
                         ]}
                         data={this.state.formatted_teams}
                         title="PBE Team TPE Tracker"
